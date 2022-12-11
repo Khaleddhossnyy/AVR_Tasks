@@ -1,1 +1,0 @@
-Note that, while trying to make all leds flash at the same time , the green led (the third led from above) doesn't work properly due to power issues which cannot be solved with our hardware 
