@@ -57,18 +57,18 @@ int main()
 
 
 
-		DIO_u8_Set_Pin_Value(GROUP_B,DIO_u8_PIN_6,DIO_u8_HIGH);
+		DIO_u8_Set_Pin_Value(GROUP_B,DIO_u8_PIN_6,DIO_u8_HIGH); //yellow led high
 		for (int i=1;i<=3;i++)
 		{
 			DIO_u8_Set_PORT_Value(GROUP_A,Number_Array[i]);
 			_delay_ms(1000);
 		}
 		DIO_u8_Set_PORT_Value(GROUP_A,Number_0);
-		DIO_u8_Set_Pin_Value(GROUP_B,DIO_u8_PIN_6,DIO_u8_LOW);
+		DIO_u8_Set_Pin_Value(GROUP_B,DIO_u8_PIN_6,DIO_u8_LOW); //yellow led off
 		//_delay_ms(500);
 
 
-		DIO_u8_Set_Pin_Value(GROUP_B,DIO_u8_PIN_7,DIO_u8_HIGH); //green led high
+		DIO_u8_Set_Pin_Value(GROUP_B,DIO_u8_PIN_7,DIO_u8_HIGH); //red led high
 		for (int i=1;i<2;i++)
 		{
 			for (int j =0;j<10;j++)
@@ -86,7 +86,7 @@ int main()
 			_delay_ms(1000);
 			DIO_u8_Set_PORT_Value(GROUP_C,Number_0);
 		}
-		DIO_u8_Set_Pin_Value(GROUP_B,DIO_u8_PIN_7,DIO_u8_LOW); //green light off
+		DIO_u8_Set_Pin_Value(GROUP_B,DIO_u8_PIN_7,DIO_u8_LOW); //red light off
 		//_delay_ms(500);
 
 	}
